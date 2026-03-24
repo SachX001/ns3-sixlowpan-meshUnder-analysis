@@ -68,7 +68,7 @@ The BC0 header contains:
  This sequence number is used together with the originator address to uniquely identify broadcast packets:
  (originator address, sequence number)
  Intermediate nodes store these identifiers inside a duplicate detection cache:
- $${\\color{red}m_seenPkts}$$   
+ $${\\color{red}m_ seenPkts}$$   
  This mechanism prevents rebroadcast loops and ensures controlled flooding behavior.
 
 ---
