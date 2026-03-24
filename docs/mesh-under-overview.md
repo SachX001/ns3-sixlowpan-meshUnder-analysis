@@ -68,14 +68,18 @@ The BC0 header contains:
  This sequence number is used together with the originator address to uniquely identify broadcast packets:
  (originator address, sequence number)
  Intermediate nodes store these identifiers inside a duplicate detection cache:
- $${\\color{red}"m_seenPkts"}$$   
+```
+  m_seenPkts
+```
  This mechanism prevents rebroadcast loops and ensures controlled flooding behavior.
 
 ---
 
 ## Duplicate Detection Mechanism
 Duplicate detection in ns-3 mesh-under forwarding is implemented using:
-$${\\color{red}"std::map<Address, std::list<uint8_t>> m_seenPkts"}$$   
+```
+std::map<Address, std::list<uint8_t>> m_seenPkts
+```
 Each node stores sequence numbers received from each originator node.
 
 When a packet arrives:
