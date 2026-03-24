@@ -75,7 +75,7 @@ The BC0 header contains:
 
 ## Duplicate Detection Mechanism
 Duplicate detection in ns-3 mesh-under forwarding is implemented using:
-$${\\color{red}std::map<Address, std::list<uint8_t>> m_seenPkts}$$   
+$${\\color{red}std::map<Address, std::list<uint8_t>> m_ seenPkts}$$   
 Each node stores sequence numbers received from each originator node.
 
 When a packet arrives:
