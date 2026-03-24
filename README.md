@@ -15,14 +15,14 @@
 
 ## Repository Structure
 
- ###docs/
+ ### docs/
   → explanation of existing implementation
 
- ###pseudocode/
+ ### pseudocode/
   → comparison of current vs improved forwarding logic
 
- ###topology-diagrams/
+ ### topology-diagrams/
   → broadcast scenarios
 
- ###experiments/
+ ### experiments/
   → evaluation strategy
